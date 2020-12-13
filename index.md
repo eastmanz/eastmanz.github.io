@@ -1,30 +1,6 @@
-## Welcome to GitHub Pages
+Hello! I'm Zach, and this is a web app. When I thought on what to pick for a rewrite out of all my code, the stock market web application stood out to me. Not only did data reflect the messy real world, but I already knew I could supplement and eventually replace the original source. The Federal Reserve makes freely available financial data series containing everything from GDP growth durin to the Great Depression, to what the NASDAQ was yesterday. It's an invaluable data source and this project wouldn't be the same without it.
 
-You can use the [editor on GitHub](https://github.com/eastmanz/eastmanz.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+###How the app looks
 ![Image](chart.PNG)
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
