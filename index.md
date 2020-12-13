@@ -28,6 +28,7 @@ Syntax highlighted code block
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+# The final product, a fully functional web application usihg real time data from the Federal Reserve
 
 
 ### Here I speak to the enhancements done (and it's a complete rewrite) to my web application.
@@ -36,6 +37,6 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 ### Original artifacts
 The old files, functional, but little more.
 
-[Standalone CRUD methods](https://github.com/eastmanz/eastmanz.github.io/blob/master/original_artifact/final_document_manipulation.py)
-[Demonstrative MongoDB code, the new code uses SQL!](https://github.com/eastmanz/eastmanz.github.io/blob/master/original_artifact/final_document_retrieval.py)
-[User client, includes the CRUD methods](https://github.com/eastmanz/eastmanz.github.io/blob/master/original_artifact/final_rest_server.py)
+1. [Standalone CRUD methods](https://github.com/eastmanz/eastmanz.github.io/blob/master/original_artifact/final_document_manipulation.py)
+2. [Demonstrative MongoDB code, the new code uses SQL!](https://github.com/eastmanz/eastmanz.github.io/blob/master/original_artifact/final_document_retrieval.py)
+3. [User client, includes the CRUD methods](https://github.com/eastmanz/eastmanz.github.io/blob/master/original_artifact/final_rest_server.py)
