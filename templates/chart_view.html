@@ -1,0 +1,79 @@
+{% extends 'base_view.html' %} <!-- Jinja templating code that allows for flexible html and js code -->
+
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script> <!--Chart.js official CDN -->
+
+<div style="width:75%;">
+    <canvas id="seriesChart"></canvas> <!-- blank space for building the chart -->
+</div>
+<script>
+<!-- Python populated variables are in snake_case, but chart.js and javascript in general is usually camelCase.  -->
+var ctx = document.getElementById('seriesChart').getContext('2d');
+var config = {
+    type: 'line',
+    data: {
+	    labels: [{% for date, value in datapoints.items() %} '{{date}}',
+            {% endfor %} <!-- Jinja syntax to populate this javascript array with the passed dates from flask -->
+        ],
+        datasets: [{
+            label: "{{chart_name}} Units:{{units}}.",
+            data: [  {% for date, value in datapoints.items() %} '{{value}}',
+            {% endfor %} <!-- Jinja syntax to populate this javascript array with the passed values from flask -->
+            ],
+            fill: false,
+            borderWidth: 2,
+            pointRadius: 2,
+            borderColor: 'rgb(255, 99, 132)',
+            pointBackgroundColor: 'rgb(255, 99, 132)',
+            pointHoverBorderColor: 'rgb(0, 0, 0)', <!-- create small circle on highlight -->
+            pointHoverBorderWidth: 4,
+            pointHitRadius: 4, <!-- expand the highlght radius by 4 px -->
+        }]
+    },
+    options: {
+        responsive: true, <!-- chart will scale with screen size -->>
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    minor: {
+                        enabled: false,
+                    }
+                }
+            }]
+        },
+        hover: { <!-- enables the point textbox popup -->
+            mode: 'nearest',
+            interesect: 'true',
+        },
+        spanGaps: true, <!-- ignores NaN data, usually holidays -->
+    }
+}
+
+var seriesChart = new Chart(ctx, config);
+</script>
+
+<form action="/chart" method="post"> <!-- create the option forms at the bottom for a new chart or reframing -->
+  <label for="source">Choose a data source</label>
+  <select name="chart_name" id="chart_select">
+    <option value="SP500">US stocks: S&P500</option>
+    <option value="VIXCLS">Market volatility: VIX </option>
+    <option value="FEDFUNDS">The 'interest rate': FEDFUNDS rate</option>
+    <option value="T10Y3M">The 10-year, 3-month treasury spread AKA: the yield curve</option>
+    <option value="WALCL">Quantitative easing in action: Total assets held by the Federal Reserve </option>
+  </select>
+  <label>Enter a start date
+  <input type="date" name="start_date" value="2010-01-01" required>
+  </label>
+    <label for="Chart timespan">Timespan</label>
+    <select name="timespan" id="time_select">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="5">5</option>
+    <option value="10" selected>10</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+{% endblock %}

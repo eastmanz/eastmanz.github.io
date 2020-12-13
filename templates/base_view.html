@@ -1,0 +1,13 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Zach Eastman - Chart tool</title>
+<nav>
+  <!-- Title every page with a simple red bordered header -->
+  <h1 style="border:1px solid red; border-radius: 5px;">Zach Eastman - Chart tool</h1>
+    <nav> <!--Quick access bar fore every pagae on site -->
+    <a href="/">Home</a> |
+    <a href="/chart">Chart</a> |
+	<a href="/compare">Compare</a>
+    </nav>
+<section class="content">
+  {% block content %}{% endblock %} <!--sub-templates insert html in here -->
+</section>
