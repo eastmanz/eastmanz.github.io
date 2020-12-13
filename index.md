@@ -30,7 +30,7 @@ Syntax highlighted code block
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 
-###Here I speak to the enhancements done (and it's a complete rewrite) to my web application.
+### Here I speak to the enhancements done (and it's a complete rewrite) to my web application.
 (https://youtu.be/Pl6ONOe5Wws)
 
-###Original artifacts
+### Original artifacts
