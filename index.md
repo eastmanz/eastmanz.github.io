@@ -3,7 +3,6 @@ Hello! I'm Zach, and this is a web app. When I thought on what to pick for a rew
 ### How the app looks
 ![Image](chart.PNG)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 ## The final product, a fully functional web app usihg real-time data from the Federal Reserve's FRED
 1. [The user facing server](https://github.com/eastmanz/eastmanz.github.io/blob/master/portfolio_final.py) and the [narrative](https://github.com/eastmanz/eastmanz.github.io/blob/master/narrative1.docx)
 2. [The database handler, included by the server code](https://github.com/eastmanz/eastmanz.github.io/blob/master/portfolio_db.py) and the [narrative](https://github.com/eastmanz/eastmanz.github.io/blob/master/narrative3.docx)
