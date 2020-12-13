@@ -29,9 +29,9 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 ## The final product, a fully functional web app usihg real-time data from the Federal Reserve's FRED
-1. [The user facing server](https://github.com/eastmanz/eastmanz.github.io/blob/master/portfolio_final.py) [Narrative](https://github.com/eastmanz/eastmanz.github.io/blob/master/narrative1.docx)
-2. [The database handler, included by the server code](https://github.com/eastmanz/eastmanz.github.io/blob/master/portfolio_db.py)[Narrative](https://github.com/eastmanz/eastmanz.github.io/blob/master/narrative3.docx)
-3. [Additional functions, including algorithms to calc rsquare and download FRED data](https://github.com/eastmanz/eastmanz.github.io/blob/master/portfolio_util.py)[Narrative](https://github.com/eastmanz/eastmanz.github.io/blob/master/narrative2.docx)
+1. [The user facing server](https://github.com/eastmanz/eastmanz.github.io/blob/master/portfolio_final.py) and the [narrative](https://github.com/eastmanz/eastmanz.github.io/blob/master/narrative1.docx)
+2. [The database handler, included by the server code](https://github.com/eastmanz/eastmanz.github.io/blob/master/portfolio_db.py) and the [narrative](https://github.com/eastmanz/eastmanz.github.io/blob/master/narrative3.docx)
+3. [Additional functions, including algorithms to calc rsquare and download FRED data](https://github.com/eastmanz/eastmanz.github.io/blob/master/portfolio_util.py) and the [narrative](https://github.com/eastmanz/eastmanz.github.io/blob/master/narrative2.docx)
 
 ### Here I speak to the enhancements done (and it's a complete rewrite) to my web application.
 [Youtube](https://youtu.be/Pl6ONOe5Wws)
